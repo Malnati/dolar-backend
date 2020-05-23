@@ -1,4 +1,6 @@
-[![maven-img]][maven]]
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Maven Central](https://maven-badges.herokuapp.com/maven-central/cz.jirutka.rsql/rsql-parser/badge.svg?style=plastic)](https://maven-badges.herokuapp.com/maven-central/cz.jirutka.rsql/rsql-parser)
+
+[![https://img.shields.io/github/release/cloudposse/grafana-dashboards.svg](Grafana)](Grafana)
 
 # dolar-backend
 
