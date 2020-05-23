@@ -1,6 +1,6 @@
 # dolar-backend
 
-**Desafío**: Construir um backend em 24h.
+**Desafio**: Construir um backend em 24h.
 
 # Links
 
