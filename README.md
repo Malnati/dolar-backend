@@ -1,5 +1,7 @@
 # dolar-backend
 
+**Desafío**: Construir um backend em 24h.
+
 # Links
 
 ### API de Origem
@@ -20,7 +22,12 @@ Ao executar o backend no Docker Container, utilize os links abaixo para testar a
 - Swagger [http://localhost:8888/swagger-ui.html](http://localhost:9999/swagger-ui.html)
 - API [http://localhost:8888/cotacaodolardia/20052020](http://localhost:9999/cotacaodolardia/20052020)
 
+### O Swagger deve ser exibido assim
+
 ![SwaggerUI.png](SwaggerUI.png)
+
+### O Json do Bacen deve ser parecido com este
+
 ![BacenJson.png](BacenJson.png)
 
 # Intalação
