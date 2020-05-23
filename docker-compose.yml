@@ -1,5 +1,17 @@
 version: '3'
 services:
+  grafana:
+    image: 'grafana/grafana'
+    container_name: dolar-grafana
+    restart: unless-stopped
+    networks:
+      - dolar-net
+    ports:
+      - '3000:3000'
+    expose:
+      - '3000'
+    volumes:
+      - 'dolar-grafana-data:/data/grafana'
   mongodb:
     image: 'mongo:latest'
     container_name: dolar-mongo
@@ -28,6 +40,8 @@ services:
       - mongodb
 volumes:
   dolar-mongo-data:
+    driver: local
+  dolar-grafana-data:
     driver: local
 networks:
   dolar-net:

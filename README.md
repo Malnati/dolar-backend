@@ -23,6 +23,7 @@ Ao executar o backend no Docker Container, utilize os links abaixo para testar a
 
 - Swagger [http://localhost:8888/swagger-ui.html](http://localhost:9999/swagger-ui.html)
 - API [http://localhost:8888/cotacaodolardia/20052020](http://localhost:9999/cotacaodolardia/20052020)
+- Grafana [http://localhost:3000/login](http://localhost:3000/login)
 
 ### O Swagger deve ser exibido assim
 
@@ -31,6 +32,10 @@ Ao executar o backend no Docker Container, utilize os links abaixo para testar a
 ### O Json do Bacen deve ser parecido com este
 
 ![BacenJson.png](BacenJson.png)
+
+## O Grafana deve ser exibido conforme a imagem abaixo
+
+![Grafana.png](Grafana.png)
 
 # Intalação
 
