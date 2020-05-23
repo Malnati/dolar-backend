@@ -106,7 +106,5 @@ Use o Makefile para facilitar o desenvolvimento
 
 # Pendências
 
-- Monitoração com Prometheus e Grafana exibindo métricas da API, do DB e da infra
-- Tracing (Jaeger)
 - Testes automatizados efetivos
 - Atividade de Especificação
