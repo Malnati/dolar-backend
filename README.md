@@ -4,21 +4,24 @@
 
 ### API de Origem
 
-Verifique as informações obtidas através do back end e compare o resultado consultando o [Bacen](<https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarDia(dataCotacao=@dataCotacao)?@dataCotacao=%2705-20-2020%27&$top=100&$skip=0&$format=json&$select=cotacaoCompra,cotacaoVenda,dataHoraCotacao>)
+Verifique as informações obtidas através do back end e compare o resultado consultando o [Bacen](<https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarDia(dataCotacao=@dataCotacao)?@dataCotacao=%2705-20-2020%27&$top=100&$skip=0&$format=json&$select=cotacaoCompra,cotacaoVenda,dataHoraCotacao>) ou então você pode usar o [Swagger do Bacen](https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/swagger-ui3#/)
 
 ### Local
 
 Ao executar o backend em ambiente local, utilize os links abaixo para testar a API.
 
-- Swagger [http://localhost:9999/swagger-ui.html#/error-handler-controller](http://localhost:9999/swagger-ui.html#/error-handler-controller)
+- Swagger [http://localhost:9999/swagger-ui.html](http://localhost:9999/swagger-ui.html)
 - API [http://localhost:9999/cotacaodolardia/20052020](http://localhost:9999/cotacaodolardia/20052020)
 
 ### No Docker Container
 
 Ao executar o backend no Docker Container, utilize os links abaixo para testar a API.
 
-- Swagger [http://localhost:8888/swagger-ui.html#/error-handler-controller](http://localhost:9999/swagger-ui.html#/error-handler-controller)
+- Swagger [http://localhost:8888/swagger-ui.html](http://localhost:9999/swagger-ui.html)
 - API [http://localhost:8888/cotacaodolardia/20052020](http://localhost:9999/cotacaodolardia/20052020)
+
+![SwaggerUI.png](SwaggerUI.png)
+![BacenJson.png](BacenJson.png)
 
 # Intalação
 
