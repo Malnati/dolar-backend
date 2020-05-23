@@ -25,6 +25,10 @@ Ao executar o backend no Docker Container, utilize os links abaixo para testar a
 - API [http://localhost:8888/cotacaodolardia/20052020](http://localhost:9999/cotacaodolardia/20052020)
 - Grafana [http://localhost:3000/login](http://localhost:3000/login)
 - Jaeger [http://localhost:16686/search](http://localhost:16686/search)
+- cAdvisor [http://localhost:8080/containers/](http://localhost:8080/containers/)
+- Prometheus [http://localhost:9090/graph](http://localhost:9090/graph)
+
+![Docker.png](Docker.png)
 
 ### O Swagger deve ser exibido assim
 
@@ -41,6 +45,14 @@ Ao executar o backend no Docker Container, utilize os links abaixo para testar a
 ## A tela de monitoramento do Jaeger é assim
 
 ![JaegerUI.png](JaegerUI.png)
+
+## O Prometheus é assim
+
+![Prometheus.png](Prometheus.png)
+
+## O cAdvisor é assim
+
+![cAdvisor.png](cAdvisor.png)
 
 # Intalação
 

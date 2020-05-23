@@ -1,13 +1,56 @@
 version: '3'
 services:
+  cadvisor:
+    image: google/cadvisor:latest
+    container_name: dolar-cadvisor
+    restart: unless-stopped
+    networks:
+      - dolar-net
+    ports:
+      - '8080:8080'
+    expose:
+      - '8080'
+    volumes:
+      - 'dolar-cadvisor-data:/data/cadvisor'
+      - /:/rootfs:ro
+      - /var/run:/var/run:rw
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+  redis:
+    image: redis:latest
+    container_name: dolar-redis
+    restart: unless-stopped
+    networks:
+      - dolar-net
+    ports:
+      - '6379:6379'
+    expose:
+      - '6379'
+    volumes:
+      - 'dolar-redis-data:/data/redis'
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: dolar-prometheus
+    restart: unless-stopped
+    networks:
+      - dolar-net
+    ports:
+      - '9090:9090'
+    expose:
+      - '9090'
+    volumes:
+      - 'dolar-prometheus-data:/data/prometheus'
   jaeger:
     image: jaegertracing/all-in-one:latest
+    container_name: dolar-jaeger
     restart: unless-stopped
     networks:
       - dolar-net
     ports:
       - '6831:6831/udp'
       - '16686:16686'
+    expose:
+      - '6831'
     volumes:
       - 'dolar-jaeger-data:/data/jaeger'
   grafana:
@@ -54,6 +97,12 @@ volumes:
   dolar-grafana-data:
     driver: local
   dolar-jaeger-data:
+    driver: local
+  dolar-prometheus-data:
+    driver: local
+  dolar-cadvisor-data:
+    driver: local
+  dolar-redis-data:
     driver: local
 networks:
   dolar-net:
