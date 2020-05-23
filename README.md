@@ -1,12 +1,10 @@
 # dolar-backend
 
-## Links para testar o backend
+# Links
 
 ### API de Origem
 
-Verifique as informações obtidas através do back end e compare com o link abaixo.
-
-- [Bacen](<https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarDia(dataCotacao=@dataCotacao)?@dataCotacao=%2705-20-2020%27&$top=100&$skip=0&$format=json&$select=cotacaoCompra,cotacaoVenda,dataHoraCotacao>)
+Verifique as informações obtidas através do back end e compare o resultado consultando o [Bacen](<https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarDia(dataCotacao=@dataCotacao)?@dataCotacao=%2705-20-2020%27&$top=100&$skip=0&$format=json&$select=cotacaoCompra,cotacaoVenda,dataHoraCotacao>)
 
 ### Local
 
