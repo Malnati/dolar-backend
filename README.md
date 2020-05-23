@@ -1,3 +1,5 @@
+[![maven-img]][maven]]
+
 # dolar-backend
 
 **Desafio**: Construir um backend em 24h.
