@@ -2,25 +2,37 @@
 
 ## Links para testar o backend
 
+### API de Origem
+
+Verifique as informações obtidas através do back end e compare com o link abaixo.
+
+- [Bacen](<https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarDia(dataCotacao=@dataCotacao)?@dataCotacao=%2705-20-2020%27&$top=100&$skip=0&$format=json&$select=cotacaoCompra,cotacaoVenda,dataHoraCotacao>)
+
 ### Local
+
+Ao executar o backend em ambiente local, utilize os links abaixo para testar a API.
 
 - Swagger [http://localhost:9999/swagger-ui.html#/error-handler-controller](http://localhost:9999/swagger-ui.html#/error-handler-controller)
 - API [http://localhost:9999/cotacaodolardia/20052020](http://localhost:9999/cotacaodolardia/20052020)
 
 ### No Docker Container
 
+Ao executar o backend no Docker Container, utilize os links abaixo para testar a API.
+
 - Swagger [http://localhost:8888/swagger-ui.html#/error-handler-controller](http://localhost:9999/swagger-ui.html#/error-handler-controller)
 - API [http://localhost:8888/cotacaodolardia/20052020](http://localhost:9999/cotacaodolardia/20052020)
 
-## Use o Makefile para facilitar o desenvolvimento ou o próprio
-
-`$> make up`
-
-ou
+# Intalação
 
 `$>docker-compose -f docker-compose.yml up -d`
 
-## Variáveis do Makefile
+# Makefile
+
+Use o Makefile para facilitar o desenvolvimento
+
+`$> make <comando>`
+
+### Variáveis do Makefile
 
 - JAR_NAME = backend-0.0.1-SNAPSHOT.jar
 - APP_BACKEND_PATH = backend
@@ -28,7 +40,7 @@ ou
 - APP_CONTAINER_NAME = dolar-backend
 - DOCKER_COMPOSE_FILE = docker-compose.yml
 
-## Comandos do Makefile
+### Comandos do Makefile
 
 | Comandos seguidos do make | Descrição                                                                                                                                                                |
 | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
