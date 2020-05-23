@@ -63,3 +63,10 @@ Use o Makefile para facilitar o desenvolvimento
 | `make recreate`           | make down && make prune && make up && make logs                                                                                                                          |
 | `make deploy`             | docker cp $(APP_BACKEND_PATH)/target/$(JAR_NAME) $(APP_CONTAINER_NAME):/$(JAR_NAME)                                                                                      |
 | `make image`              | docker cp $(APP_BACKEND_PATH)/target/$(JAR_NAME) $(APP_CONTAINER_NAME):/$(JAR_NAME)                                                                                      |
+
+# Pendências
+
+- Monitoração com Prometheus e Grafana exibindo métricas da API, do DB e da infra
+- Tracing (Jaeger)
+- Testes automatizados efetivos
+- Atividade de Especificação
