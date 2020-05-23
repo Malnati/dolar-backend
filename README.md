@@ -24,6 +24,7 @@ Ao executar o backend no Docker Container, utilize os links abaixo para testar a
 - Swagger [http://localhost:8888/swagger-ui.html](http://localhost:9999/swagger-ui.html)
 - API [http://localhost:8888/cotacaodolardia/20052020](http://localhost:9999/cotacaodolardia/20052020)
 - Grafana [http://localhost:3000/login](http://localhost:3000/login)
+- Jaeger [http://localhost:16686/search](http://localhost:16686/search)
 
 ### O Swagger deve ser exibido assim
 
@@ -36,6 +37,10 @@ Ao executar o backend no Docker Container, utilize os links abaixo para testar a
 ## O Grafana deve ser exibido conforme a imagem abaixo
 
 ![Grafana.png](Grafana.png)
+
+## A tela de monitoramento do Jaeger é assim
+
+![JaegerUI.png](JaegerUI.png)
 
 # Intalação
 
